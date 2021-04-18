@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <form action="">
+        <!-- id dan for dari kedua kubu dibawah ini harus sesuai/singkron -->
+        <label for="Username">Username :</label>
+        <input type="text" id="Username">
+        <!-- input tipe yang pertama yaitu ="text" -->
+        <!-- Kelebihan menggunakan label yaitu, ketika mengklik data dari label tsb maka kursor akan muncul di label tempat inputnya -->
+            <br>
+        <label for="password">Password  :</label>
+        <input type="password" id="password">
+        <!-- input tipe yang kedua ="password" -->
+            <br><br>
+        <!-- agar radionya bisa dipilih hanya salah satu, maka kita beritahu dulu bahwa keduanya adalah satu grup -->
+        <!-- nama grupnya adalah name="jeniskelamin" -->
+        <input type="radio" id="pria" name="jeniskelamin"> <label for="Pria">Pria</label>
+        <br> <!-- agar radio buttonnya satunya lagi, berada dibawah-->
+        <input type="radio" id="wanita" name="jeniskelamin"> <label for="wanita">Wanita</label>
+            <br>
+        <!-- Bagaimana kalau mau memilih lebih dari satu sih, jangan gunakan radiobutton tapi gunakan spt dibawah ini... -->
+        <input type="checkbox" id="Ngoding"><label for="Ngoding">Ngoding</label>
+        <input type="checkbox" id="Olahraga"><label for="Olahraga">Olahraga</label>
+        <input type="checkbox" id="Berenang"><label for="Berenang">Berenang</label>
+            <br><br>
+            <!-- Digunakan untuk komentar dan lain sebagainya.. -->
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+            <br>
+        <label for="">Tanggal : </label><select>
+            <option value="">19</option>
+            <option value="">20</option>
+            <option value="">21</option>
+        </select>
+        <label for="">Bulan : </label><select>
+            <option value="">Januari</option>
+            <option value="">Februari</option>
+            <option value="">Maret</option>
+        </select>
+        <label for="">Tahun : </label><select>
+            <option value="">1999</option>
+            <option value="">2000</option>
+            <option value="">2001</option>
+        </select>
+            <br>
+        <!-- Value berguna untuk mengganti subject dari submit -->
+        <!-- <input type="submit" value="Mengirim!"> -->
+        <!-- Tapi tidak disarankan menggunakan tag input, karena tombol kan bukan bagian dari tag input, melainkan <button> -->
+        <button type="submit">Kirim!</button>
+
+
+    </form>
+</body>
+</html>
